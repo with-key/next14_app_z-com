@@ -1,14 +1,15 @@
 type Props = {
   children: React.ReactNode;
   modal: React.ReactNode;
+  aside: React.ReactNode;
 };
 
-export default function BeforeLoginLayout({ children, modal }: Props) {
+export default function BeforeLoginLayout({ children, modal, aside }: Props) {
   return (
     <>
-      <div>before login layout</div>
-      <div>{modal}</div>
       <div>{children}</div>
+      <div>{aside}</div>
+      {/* <div>{modal}</div> */}
     </>
   );
 }

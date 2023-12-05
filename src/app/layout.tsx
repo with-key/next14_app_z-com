@@ -16,7 +16,6 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div>root layout</div>
         <div>{children}</div>
       </body>
     </html>
